@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Hover Effect 🔥🔥</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body{
+            width: 100%;
+            height: 100%;
+            font-size: 62.5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        div a{
+            position: relative;
+            width: 12rem;
+            height: 4.5rem;
+            display: inline-block;
+            background: #222;
+            margin: 20px;
+            padding: 2px 70px;
+        }
+        div a:before, div a:after{
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: #000;
+            transition: 0.5s;
+        }
+         div a:nth-child(1):before,
+         div a:nth-child(1):after{
+            background: linear-gradient(45deg, #E61EFF , #000, #000, #41C8FF);
+        }
+        div a:nth-child(2):before,
+         div a:nth-child(2):after{
+            background: linear-gradient(45deg, #39FF14, #000, #000, #FFFF00);
+            }
+            div a:nth-child(3):before,
+         div a:nth-child(3):after{
+            background: linear-gradient(45deg, 
+#f7b733, #000, #000, 
+#fc4a1a
+);
+            }
+            div a:nth-child(4):before,
+         div a:nth-child(4):after{
+            background: linear-gradient(45deg, #6190e8, #000, #000, #a7bfe8);
+            
+        }
+        div a:hover:before{
+            inset: -3px;
+        }
+        div a:hover:after{
+            inset: -3px;
+            filter: blur(1rem);
+        }
+        div a span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            background: black;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            text-transform: Uppercase;
+            letter-spacing: 0.2rem;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#"><span>
+            Hover Me
+        </span></a>
+        <a href="#"><span>
+            Hover Me
+        </span></a>
+        <a href="#"><span>
+            Hover Me
+        </span></a>
+        <a href="#"><span>
+            Hover Me
+        </span></a>
+    </div>
+</body>
+  </html>
+  
